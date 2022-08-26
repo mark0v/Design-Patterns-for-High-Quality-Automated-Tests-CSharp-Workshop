@@ -16,7 +16,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Safari;
 using OpenQA.Selenium.Support.UI;
 
@@ -41,9 +40,6 @@ namespace ApiUsabilityDemos
                     break;
                 case Browser.Edge:
                     _webDriver = new EdgeDriver(Environment.CurrentDirectory);
-                    break;
-                case Browser.Opera:
-                    _webDriver = new OperaDriver(Environment.CurrentDirectory);
                     break;
                 case Browser.Safari:
                     _webDriver = new SafariDriver(Environment.CurrentDirectory);
